@@ -17,14 +17,15 @@ function whileLoop(number) {
   return "done"
 }
 
-var i = 10
+var i = 0;
 
 function incrementVariable() {
-  i -= 1;
+  i = i + 1;
 }
 
 function doWhileLoop(array) {
   do {
-    array.shift()
-  } while(array.length > 0 || incrementVariable())
+    array.pop();
+  } while (array.length && incrementVariable());
+  return array;
 }
