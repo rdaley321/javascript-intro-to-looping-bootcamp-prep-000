@@ -24,6 +24,6 @@ function incrementVariable() {
 
 function doWhileLoop(array) {
   do {
-    
-  } while(incrementVariable())
+    array.pop()
+  } while(array.length > 0 && incrementVariable())
 }
