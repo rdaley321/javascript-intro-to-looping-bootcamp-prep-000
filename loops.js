@@ -20,11 +20,11 @@ function whileLoop(number) {
 var i = 0
 
 function incrementVariable() {
-  i = i + 1;
+  i += 1;
 }
 
 function doWhileLoop(array) {
   do {
-    array.pop()
+    array.shift()
   } while(array.length > 0 && incrementVariable())
 }
